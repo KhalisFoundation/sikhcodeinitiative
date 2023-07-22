@@ -23,6 +23,7 @@ export default function PostPage({
                                 src={featuredimage}
                                 width={850}
                                 height={800}
+                                alt={title}
                             />
                         </div>
                     ) : null}
@@ -32,7 +33,7 @@ export default function PostPage({
                         <p className='is-size-7	is-italic	'>{new Date(date).toDateString()}</p>
                     </div>
                     <div className='py-3'>
-                    <PostContent className='has-text-justified	' content={content} />
+                    <PostContent className='has-text-left	' content={content} />
 
                     </div>
 

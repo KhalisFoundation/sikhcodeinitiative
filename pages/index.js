@@ -317,8 +317,8 @@ export default function Home({ posts }) {
         </section>
         <section class="section px-6 py-6">
           <div class="columns is-multiline">
-            {posts?.map((post) => (
-              <div class="column  is-rounded post is-4 mb-5">
+            {posts?.map((post , i) => (
+              <div key={i} class="column  is-rounded post is-4 mb-5">
                 <article class="columns  card is-multiline">
                   {/* <div class="column  mt-2 is-12 post-img" style={{
                     height: 200,
