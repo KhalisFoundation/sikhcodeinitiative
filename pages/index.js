@@ -60,7 +60,7 @@ export default function Home({ posts }) {
           <div className=".container.is-fullhd	">
             <div className="columns features py-3 ">
               <div className="column is-6 my-0 mx-0 p-0 has-background-link">
-                <div className="card m-0 p-0 has-background-link">
+                <div className=" m-0 p-0 has-background-link">
                   <div className="card-content p-6">
                     <div className="content m-4 px-3">
                       <h4 className="is-size-3 has-text-light py-2">
@@ -86,7 +86,7 @@ export default function Home({ posts }) {
                       <div className="card-content p-5">
                         <div className="content m-4">
                           <div className="is-flex is-flex-direction-column	">
-                            <p className="is-size-1 has-text-light my-3">
+                            <p className="is-size-1 has-text-white has-font-weight-bold my-3">
                               20
                             </p>
                             <p className="is-size-5 has-text-light">
@@ -100,7 +100,7 @@ export default function Home({ posts }) {
                       <div className="card-content p-5">
                         <div className="content m-4">
                           <div className="is-flex is-flex-direction-column	">
-                            <p className="is-size-1 has-text-light my-3">
+                            <p className="is-size-1 has-text-light my-3 has-font-weight-bold">
                               10
                             </p>
                             <p className="is-size-5 has-text-light">
@@ -113,7 +113,7 @@ export default function Home({ posts }) {
                       <div className="card-content p-5">
                         <div className="content m-4">
                           <div className="is-flex is-flex-direction-column	">
-                            <p className="is-size-1 has-text-light my-3">
+                            <p className="is-size-1 has-text-light my-3 has-font-weight-bold">
                               A+
                             </p>
                             <p className="is-size-5 has-text-light">
@@ -129,7 +129,7 @@ export default function Home({ posts }) {
                       <div className="card-content p-5">
                         <div className="content m-4">
                           <div className="is-flex is-flex-direction-column	">
-                            <p className="is-size-1 has-text-light my-3">
+                            <p className="is-size-1 has-text-light my-3 has-font-weight-bold">
                               10
                             </p>
                             <p className="is-size-5 has-text-light">
@@ -193,7 +193,7 @@ export default function Home({ posts }) {
           </div>
         </section>
         <div class="is-divider"></div>
-        <section class="section">
+        <section class="section has-background-light">
           <div class="container has-text-centered">
             <div class="columns is-centered" style={{ padding: "2rem" }}>
               <div class="column">
@@ -204,14 +204,14 @@ export default function Home({ posts }) {
                       <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center			" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-light	 is-3 has-text-left">We are ready to make an impact to empower Sikh Youth in Punjab.
+                        <p class="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">We are ready to make an impact to empower Sikh Youth in Punjab.
                         </p>
-                        < p className="button  is-dark " style={{
+                        < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
                         }} >
                           <Link
                             href='https://dvnetwork.org/projects/sikh-youth-coding-initiative'
-                            className="has-text-light"
+                            className="has-text-link"
                           >
                             Donate Now
                           </Link>
@@ -230,11 +230,11 @@ export default function Home({ posts }) {
                       <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between	is-align-items-center	" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-light	 is-3 has-text-left">We are the pioneers of open source apps such as Sundar Gutka and SikhiToTheMax.</p>
+                        <p class="has-text-weight-semibold	 is-size-6 has-text-left has-text-black">We are the pioneers of open source apps such as Sundar Gutka and SikhiToTheMax.</p>
 
-                        < p className="button  is-dark " style={{
+                        < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
-                        }} ><Link href='https://github.com/KhalisFoundation' className="has-text-light"
+                        }}  ><Link href='https://github.com/KhalisFoundation' className="has-text-link"
                         >
                             Browse Repositries
                           </Link></p>
@@ -251,11 +251,11 @@ export default function Home({ posts }) {
                       <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center	" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-light	 is-3 has-text-left">Join us as a mentor</p>
+                        <p class="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">Join us as a mentor</p>
                        
-                        < p className="button  is-dark " style={{
+                        < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
-                        }} ><Link href='https://form.jotform.com/232005203095038 ' className="has-text-light">
+                        }}  ><Link href='https://form.jotform.com/232005203095038 ' className="has-text-link">
                         Contact us
                       </Link></p> 
                       </div>
@@ -341,15 +341,14 @@ export default function Home({ posts }) {
                   </div> */}
                   <div class="column is-12 featured-content ">
                     <Link href={`/news/${post.slug}`}                    >
-                      <h3
-                        className=" mx-4 pt-2 has-text-dark is-size-4 has-font-weight-bold has-text-black" >{post.frontmatter.title}
-                      </h3>
+                      <p
+                        className=" mx-4 py-2 has-text-dark is-size-4 has-font-weight-bold has-text-black" >{post.frontmatter.title}
+                      </p>
                     </Link>
+                    <h3 class="heading post-category px-3">                        {new Date(post.frontmatter.date).toLocaleDateString()}</h3>
 
                     <p class=" mx-3 pt-1 post-excerpt">                        {post.frontmatter.description}
                     </p>
-                    <h3 class="heading post-category px-3">                        {new Date(post.frontmatter.date).toLocaleDateString()}</h3>
-
                     <Link
                       className="button mx-3 is-link mb-4 px-3"
                       href={`/news/${post.slug}`}
