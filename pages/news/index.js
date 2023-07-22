@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import SEO from "../../components/SEO";
 export default function Home({ posts }) {
-  console.log("posts", posts);
   return (
     <>
       <SEO title="News" />
@@ -87,7 +86,6 @@ export async function getStaticProps() {
       },
     };
   });
-  console.log("posts", posts);
 
   return {
     props: {

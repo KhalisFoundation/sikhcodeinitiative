@@ -402,7 +402,6 @@ export async function getStaticProps() {
       },
     };
   });
-  console.log("posts", posts);
 
   return {
     props: {

@@ -11,7 +11,6 @@ export default function PostPage({
     slug,
     content,
 }) {
-    console.log(title, date, featuredimage, categories, tags, content)
     return (<>
         <SEO title={title} />
         <section className="section">
