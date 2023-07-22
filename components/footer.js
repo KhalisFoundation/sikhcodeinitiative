@@ -16,37 +16,37 @@ const Footer = () => {
 
 
   return (
-    <footer className="footer has-background-link has-text-white-ter">
+    <footer className="footer has-background-light has-text-white-ter">
       <div className="content has-text-centered has-text-white-ter">
         <div className="has-text-white-ter">
           <div className=" container content has-text-centered">
             <div className="columns is-centered p-0" >
               <div className="column is-one-third p-0">
                 <div className="contact-div">
-                  <h1 className=" px-5 is-size-4 has-text-weight-bold	has-text-light has-text-left">
+                  <h1 className=" px-5 is-size-4 has-text-weight-bold	has-text-black has-text-left">
                     Sikh Youth Coding Initiative
 
 
                   </h1>
-                  <p className="is-size-6 has-text-left px-5 has-text-weight-bold has-text-light">
+                  <p className="is-size-6 has-text-left px-5 has-text-weight-bold has-text-black">
                     Empowering The Youth in Punjab: Coding a Bright Future                  </p>
                 </div>
               </div>
               <div className="column is-one-third p-0">
                 <div className="contact-div">
-                  <h1 className="px-5 is-size-4 has-text-weight-bold	has-text-light has-text-left">
+                  <h1 className="px-5 is-size-4 has-text-weight-bold	has-text-black has-text-left">
                     Menu                  </h1>
                   <div className="px-5" style={{
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "flex-start"
                   }}>
-                    <Link className="is-size-5 py-2  has-text-light is-flex is-align-items-center	" href="https://khalisfoundation.org/about/privacy-policy/">
+                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/about/privacy-policy/">
                       Privacy
                     </Link>
-                    <Link className="is-size-5 py-2  has-text-light is-flex is-align-items-center	" href="https://khalisfoundation.org/">
+                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/">
                       About Us</Link>
-                    <Link className="is-size-5 py-2  has-text-light is-flex is-align-items-center	" href="https://dvnetwork.org/projects/sikh-youth-coding-initiative">
+                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://dvnetwork.org/projects/sikh-youth-coding-initiative">
 
                       Donate
                     </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
               <div className="column is-one-third">
                 <div className="container">
-                  <p className="px-5 is-size-4 has-text-weight-bold	has-text-light has-text-left">
+                  <p className="px-5 is-size-4 has-text-weight-bold	has-text-black has-text-left">
                     Social Media
                   </p>
                   <div className="is-flex is-align-items-center is-justify-content-flex-start	 px-5">
@@ -65,7 +65,10 @@ const Footer = () => {
                       href="https://www.facebook.com/KhalisFoundation"
                     >
                       <div className="is-flex is-flex-direction-row	is-align-items-center	">
-                        <Image src={facebook} alt="Facebook" width={50} height={50} />
+                        <Image style={{
+                          background:"white",
+                          borderRadius:"6px", 
+                        }} src={facebook} alt="Facebook" width={50} height={50} />
                       </div>
                     </Link>
                     <Link
@@ -74,7 +77,10 @@ const Footer = () => {
                       href="https://www.instagram.com/khalisfound/"
                     >
                       <div className="is-flex is-flex-direction-row	is-align-items-center	">
-                        <Image src={instagram} alt="instagram" width={50} height={50} />
+                        <Image style={{
+                          background:"white",
+                          borderRadius:"6px"
+                        }}  src={instagram} alt="instagram" width={50} height={50} />
                       </div>
                     </Link>
                     <Link
@@ -83,7 +89,10 @@ const Footer = () => {
                       href="https://twitter.com/khalisfound"
                     >
                       <div className="is-flex is-flex-direction-row	is-align-items-center	">
-                        <Image src={twitter} alt="twitter" width={50} height={50} />
+                        <Image style={{
+                          background:"white",
+                          borderRadius:"6px"
+                        }}  src={twitter} alt="twitter" width={50} height={50} />
                       </div>
                     </Link>
                     <Link
@@ -92,7 +101,10 @@ const Footer = () => {
                       href="https://www.linkedin.com/company/khalis-foundation/"
                     >
                       <div className="is-flex is-flex-direction-row	is-align-items-center 	">
-                        <Image src={linkedin} alt="linkedin" width={50} height={50} />
+                        <Image style={{
+                          background:"white",
+                          borderRadius:"6px"
+                        }}  src={linkedin} alt="linkedin" width={50} height={50} />
                       </div>
                     </Link>
                   </div>
@@ -107,7 +119,7 @@ const Footer = () => {
 
           <div>
             <div className="container">
-              <p className="body-text   ">
+              <p className="body-text  has-text-black ">
                 © {new Date().getFullYear()}                     Sikh Youth Coding Initiative
 
               </p>

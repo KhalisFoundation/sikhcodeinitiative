@@ -5,34 +5,42 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import Image from 'next/image'
 import PostContent from '../../components/Content'
+import SEO from '../../components/SEO'
 export default function PostPage({
-    frontmatter: { title, date, featuredimage ,categories , tags},
+    frontmatter: { title, date, featuredimage, categories, tags },
     slug,
     content,
 }) {
-    console.log(title, date, featuredimage ,categories , tags , content)
-    return (
+    console.log(title, date, featuredimage, categories, tags, content)
+    return (<>
+        <SEO title={title} />
         <section className="section">
-            <div className="container" style={{ maxWidth: "640px" }}>
-                <div className='pb-6'>
-                    <h1 className="is-size-1 has-text-dark post-heading pt-3">{title}</h1>
+            <div className="container" style={{ maxWidth: "860px" }}>
+                <div className='py-4'>
                     {featuredimage ? (
                         <div className="featured-thumbnail pb-5">
                             <Image
                                 src={featuredimage}
-                                width={800}
+                                width={850}
                                 height={800}
                             />
                         </div>
                     ) : null}
-                    <div><p>{new Date(date).toDateString()}</p></div>
-                    <PostContent content={content} />
-                   
-                   
+                    <h1 className="is-size-2 has-text-dark post-heading pt-3">{title}</h1>
+
+                    <div>
+                        <p className='is-size-7	is-italic	'>{new Date(date).toDateString()}</p>
+                    </div>
+                    <div className='py-3'>
+                    <PostContent className='has-text-justified	' content={content} />
+
+                    </div>
+
+
                 </div>
             </div>
         </section>
-
+    </>
 
     )
 }

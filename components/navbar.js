@@ -42,13 +42,17 @@ class Navbar extends React.Component {
         <div style={{ maxWidth: "96%" }} className="container"        >
           <div className="navbar-brand">
             <Link href="/" className="navbar-item">
-              <div className="is-flex is-align-content-center	">
+              <div style={{
+              }} className="is-flex is-align-content-center	">
                 <Image
                   src={logo}
+                  style={{
+                    maxHeight:"3.25rem"
+                  }}
                   alt="Khalis Foundation"
                   // style={{ width: "100px", height: "40px" }}
-                  width={200}
-                  height={300}
+                  // width={100}
+                  // height={600}
                 />
                 {/* <p className="is-size4 px-0">Sikh Youth Coding Initiative
                 </p> */}
