@@ -1,36 +1,21 @@
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  /* .header { */
+    /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1920" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>') !important; */
+    /* background-repeat: no-repeat !important; */
+    /* filter: blur(10px) !important; */
+    /* transform: perspective(900px) rotateX(40deg) !important; */
+    /* background-position: absolute !important; */
+    /* inset: auto auto 0 20% !important; */
+    /* transform-origin: bottom right  !important; */
 
-* {
-  box-sizing: border-box;
-}
+  /* } */
+    /* height: 2560px !important; */
+    /* width:1020px !important; */
+    /* inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2)  !important;
+  
+  } */
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-
-  body {
-    color: white;
-    background: black;
-  }
-} */
-
-
-
-
-/* Write css code for desktop screen */
-@media screen and (min-width: 1439px) {
+/* @media screen and (min-width: 1439px) {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1920" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>') !important;
     background-repeat: no-repeat !important;
@@ -44,8 +29,8 @@ a {
     transform: perspective(900px) rotateX(40deg) !important;
     transform-origin: bottom right  !important;
   }
-}
-@media screen and (min-width: 1024px) {
+} */
+/* @media screen and (min-width: 1024px) {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1024" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>') !important;
     background-repeat: repeat !important;
@@ -59,9 +44,9 @@ a {
     transform: perspective(1400px) rotateX(45deg) !important;
     transform-origin: bottom right !important;
   }
-}
+} */
 /* for Talet screen wrtie */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="768" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>');
     background-repeat: no-repeat;
@@ -75,9 +60,9 @@ a {
     transform: perspective(900px) rotateX(38deg);
     transform-origin: bottom right;
   }
-}
+} */
 
-@media screen and (max-width: 768px ) {
+/* @media screen and (max-width: 768px ) {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="768" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>');
     background-repeat: no-repeat;
@@ -92,4 +77,4 @@ a {
     transform-origin: bottom right;
     object-fit: contain;
   }
-}
+} */

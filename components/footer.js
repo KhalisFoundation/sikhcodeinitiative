@@ -1,5 +1,5 @@
 import * as React from "react";
-import Link from "next/link";
+// import a from "next/link";
 // import FooterLine from "./foot-heading";
 // import logo from "../img/logo.svg";
 import facebook from "./img/social/facebook.svg";
@@ -41,15 +41,15 @@ const Footer = () => {
                     flexDirection: "column",
                     alignItems: "flex-start"
                   }}>
-                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/about/privacy-policy/">
+                    <a target="_blank" className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/about/privacy-policy/">
                       Privacy
-                    </Link>
-                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/">
-                      About Us</Link>
-                    <Link className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://dvnetwork.org/projects/sikh-youth-coding-initiative">
+                    </a>
+                    <a target="_blank" className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://khalisfoundation.org/">
+                      About Us</a>
+                    <a target="_blank" className="is-size-5 py-2  has-text-black is-flex is-align-items-center	" href="https://dvnetwork.org/projects/sikh-youth-coding-initiative">
 
                       Donate
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -59,10 +59,11 @@ const Footer = () => {
                     Social Media
                   </p>
                   <div className="is-flex is-align-items-center is-justify-content-flex-start	 px-5">
-                    <Link
+                    <a target="_blank"
                       className="py-2 px-2"
                       title="facebook"
                       href="https://www.facebook.com/KhalisFoundation"
+                      
                     >
                       <div className="is-flex is-flex-direction-row	is-align-items-center	">
                         <Image style={{
@@ -70,8 +71,8 @@ const Footer = () => {
                           borderRadius:"6px", 
                         }} src={facebook} alt="Facebook" width={50} height={50} />
                       </div>
-                    </Link>
-                    <Link
+                    </a>
+                    <a target="_blank"
                       className="py-2 px-2"
                       title="instagram"
                       href="https://www.instagram.com/khalisfound/"
@@ -82,8 +83,8 @@ const Footer = () => {
                           borderRadius:"6px"
                         }}  src={instagram} alt="instagram" width={50} height={50} />
                       </div>
-                    </Link>
-                    <Link
+                    </a>
+                    <a target="_blank"
                       className="py-2 px-2"
                       title="twitter"
                       href="https://twitter.com/khalisfound"
@@ -94,8 +95,8 @@ const Footer = () => {
                           borderRadius:"6px"
                         }}  src={twitter} alt="twitter" width={50} height={50} />
                       </div>
-                    </Link>
-                    <Link
+                    </a>
+                    <a target="_blank"
                       className="py-2 px-2"
                       title="linkedin"
                       href="https://www.linkedin.com/company/khalis-foundation/"
@@ -106,7 +107,7 @@ const Footer = () => {
                           borderRadius:"6px"
                         }}  src={linkedin} alt="linkedin" width={50} height={50} />
                       </div>
-                    </Link>
+                    </a>
                   </div>
 
 

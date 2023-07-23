@@ -38,9 +38,9 @@ export default function Home({ posts }) {
                     2024 Program
                   </p>
                   <div className="is-flex is-align-items-center-mobile is-justify-content-center-mobile">
-                    <Link href='https://form.jotform.com/232005203095038 ' className="py-2	button is-link   is-black" style={{ marginTop: 15 }}>
+                    <a target="_blank" href='https://form.jotform.com/232005203095038 ' className="py-2	button is-link   is-black" style={{ marginTop: 15 }}>
                       Express Interest
-                    </Link>
+                    </a>
                   </div>
 
                 </div>
@@ -184,9 +184,9 @@ export default function Home({ posts }) {
 
                 </p>
                 <div>
-                  <Link href='https://form.jotform.com/232005203095038 ' className="py-1	button is-link   is-black" style={{ marginTop: 15 }}>
+                <a target="_blank" href='https://form.jotform.com/232005203095038 ' className="py-1	button is-link   is-black" style={{ marginTop: 15 }}>
                     Express Interest
-                  </Link>
+                  </a>
                 </div>
 
               </div>
@@ -211,12 +211,12 @@ export default function Home({ posts }) {
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
                         }} >
-                          <Link
+                          <a target="_blank"
                             href='https://dvnetwork.org/projects/sikh-youth-coding-initiative'
                             className="has-text-link"
                           >
                             Donate Now
-                          </Link>
+                          </a>
                         </p>
 
                       </div>
@@ -236,10 +236,10 @@ export default function Home({ posts }) {
 
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
-                        }}  ><Link href='https://github.com/KhalisFoundation' className="has-text-link"
+                        }}  ><a target="_blank" href='https://github.com/KhalisFoundation' className="has-text-link"
                         >
                             Browse Repositries
-                          </Link></p>
+                          </a></p>
 
                       </div>
                     </div>
@@ -257,9 +257,9 @@ export default function Home({ posts }) {
 
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
-                        }}  ><Link href='https://form.jotform.com/232005203095038 ' className="has-text-link">
+                        }}  ><a target="_blank" href='https://form.jotform.com/232005203095038 ' className="has-text-link">
                             Contact us
-                          </Link></p>
+                          </a></p>
                       </div>
                     </div>
 
