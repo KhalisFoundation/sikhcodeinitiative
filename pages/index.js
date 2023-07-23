@@ -24,7 +24,9 @@ export default function Home({ posts }) {
     <>
       <SEO />
       <div className="section section--gradient">
-        <section className="hero is-info ">
+        <section className="hero header " style={{
+          // height:"300px"
+        }}>
           <div className="hero-body">
             <div className="container" style={{
               height: "60vh"
@@ -35,8 +37,8 @@ export default function Home({ posts }) {
                   <p className="has-text-centered-mobile subtitle is-3 py-3">
                     2024 Program
                   </p>
-                  <div>
-                    <Link href='https://form.jotform.com/232005203095038 ' className="py-2	button is-light is-outlined  is-black" style={{ marginTop: 15 }}>
+                  <div className="is-flex is-align-items-center-mobile is-justify-content-center-mobile">
+                    <Link href='https://form.jotform.com/232005203095038 ' className="py-2	button is-link   is-black" style={{ marginTop: 15 }}>
                       Express Interest
                     </Link>
                   </div>
@@ -192,19 +194,19 @@ export default function Home({ posts }) {
             </div>
           </div>
         </section>
-        <div class="is-divider"></div>
-        <section class="section has-background-light">
-          <div class="container has-text-centered">
-            <div class="columns is-centered" style={{ padding: "2rem" }}>
-              <div class="column">
-                <div class="card">
+        <div className="is-divider"></div>
+        <section className="section has-background-light">
+          <div className="container has-text-centered">
+            <div className="columns is-centered" style={{ padding: "2rem" }}>
+              <div className="column">
+                <div className="card">
 
-                  <div class="card-content p-2">
-                    <div class="media">
-                      <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center			" style={{
+                  <div className="card-content p-2">
+                    <div className="media">
+                      <div className="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center			" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">We are ready to make an impact to empower Sikh Youth in Punjab.
+                        <p className="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">We are ready to make an impact to empower Sikh Youth in Punjab.
                         </p>
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
@@ -223,14 +225,14 @@ export default function Home({ posts }) {
                   </div>
                 </div>
               </div>
-              <div class="column">
-                <div class="card">
-                  <div class="card-content p-2">
-                    <div class="media">
-                      <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between	is-align-items-center	" style={{
+              <div className="column">
+                <div className="card">
+                  <div className="card-content p-2">
+                    <div className="media">
+                      <div className="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between	is-align-items-center	" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-semibold	 is-size-6 has-text-left has-text-black">We are the pioneers of open source apps such as Sundar Gutka and SikhiToTheMax.</p>
+                        <p className="has-text-weight-semibold	 is-size-6 has-text-left has-text-black">We are the pioneers of open source apps such as Sundar Gutka and SikhiToTheMax.</p>
 
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
@@ -244,20 +246,20 @@ export default function Home({ posts }) {
                   </div>
                 </div>
               </div>
-              <div class="column">
-                <div class="card">
-                  <div class="card-content p-2">
-                    <div class="media">
-                      <div class="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center	" style={{
+              <div className="column">
+                <div className="card">
+                  <div className="card-content p-2">
+                    <div className="media">
+                      <div className="media-content py-4 px-5 is-flex is-flex-direction-column	is-justify-content-space-between is-align-items-center	" style={{
                         height: "170px"
                       }}>
-                        <p class="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">Join us as a mentor</p>
-                       
+                        <p className="has-text-weight-semibold	 is-size-6 has-text-left as-text-black">Join us as a mentor</p>
+
                         < p className="has-text-weight-bold" style={{
                           maxWidth: "fit-content"
                         }}  ><Link href='https://form.jotform.com/232005203095038 ' className="has-text-link">
-                        Contact us
-                      </Link></p> 
+                            Contact us
+                          </Link></p>
                       </div>
                     </div>
 
@@ -272,11 +274,11 @@ export default function Home({ posts }) {
           <div className="container" style={{ maxWidth: "640px" }}>
             <div className="content pt-5 ">
               <h1 className="has-text-centered is-2 py-5">Latest Updates</h1>
-              {/* {posts &&
+              {posts &&
                 posts?.map((post) => (
                   <div key={post.id}>
                     <article className={`blog-list-item tile is-child    py-3`}>
-                      <header>
+                      {/* <header>
                         {post.frontmatter.featuredimage ? (
                           <div className="featured-thumbnail">
                             <Image
@@ -286,92 +288,33 @@ export default function Home({ posts }) {
                             />
                           </div>
                         ) : null}
-                      </header>
-                      <h2>
-                        <Link
-                          className=" has-text-dark is-size-2 has-font-weight-bold"
-                          href={`/news/${post.slug}`}
-                        >
-                          {post.frontmatter.title}
+                      </header> */}
+                      <div className="column is-12 featured-content ">
+                        <Link href={`/news/${post.slug}`}                    >
+                          <h3 className=" mx-4 py-1 has-text-dark is-size-4 has-font-weight-bold has-text-black" >
+                            {post.frontmatter.title}
+                          </h3>
                         </Link>
-                      </h2>
-                      <p className="pt-3 body-text">
-                        {post.frontmatter.description}
-                      </p>
+                        <h3 className=" post-category px-3 is-size-6 ">
+                          {new Date(post.frontmatter.date).toLocaleDateString()}
+                        </h3>
 
-                      <span className=" is-block date-text	">
-                        {new Date(post.frontmatter.date).toDateString()}
-                      </span>
+                        <p className=" mx-3 pt-1 post-excerpt">
+                          {post.frontmatter.description}
+                        </p>
+
+                      </div>
 
                       <Link
-                        className="button is-small is-black "
+                        className="button mx-3 is-link mb-4 px-3"
                         href={`/news/${post.slug}`}
                       >
                         Read more
                       </Link>
                     </article>
                   </div>
-                ))} */}
+                ))}
             </div>
-          </div>
-        </section>
-        <section class="section px-6 py-6">
-          <div class="columns is-multiline">
-            {posts?.map((post , i) => (
-              <div key={i} class="column  is-rounded post is-4 mb-5">
-                <article class="columns  card is-multiline">
-                  {/* <div class="column  mt-2 is-12 post-img" style={{
-                    height: 200,
-                    position: "relative",
-                    width: "100%",
-                    // display: '-ms-inline-flexbox',
-                    // flexDirection: "column",
-                    // justifyContent: "flex-start",
-                    // alignItems: "flex-start"
-
-                  }}>
-                    <Image
-                      src={post.frontmatter.featuredimage}
-                      // width={450}
-                      // height={300}
-                      fill={true}
-                      // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      style={{ objectFit: "contain" }}
-                    />
-                  </div> */}
-                  <div class="column is-12 featured-content ">
-                    <Link href={`/news/${post.slug}`}                    >
-                      <p
-                        className=" mx-4 py-2 has-text-dark is-size-4 has-font-weight-bold has-text-black" >{post.frontmatter.title}
-                      </p>
-                    </Link>
-                    <h3 class="heading post-category px-3">                        {new Date(post.frontmatter.date).toLocaleDateString()}</h3>
-
-                    <p class=" mx-3 pt-1 post-excerpt">                        {post.frontmatter.description}
-                    </p>
-                    <Link
-                      className="button mx-3 is-link mb-4 px-3"
-                      href={`/news/${post.slug}`}
-                    >
-                      Read more
-                    </Link>
-                  </div>
-                </article>
-
-              </div>
-            ))}
-
-            {/*            
-            <div class="column is-4">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">May 25, 2023</h2>
-                <h1 class="title has-text-black is-3">Getting Started</h1>
-                <p class="has-text-dark">This is a starter template for creating a beautiful, customizable blog with
-                  minimal
-                  effort. You’ll only have to change a few settings and you’re ready to go. As with all Jigsaw sites,
-                  configuration settings can be found in config</p>
-              </div>
-            </div> */}
           </div>
         </section>
       </div>
