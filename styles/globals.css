@@ -37,7 +37,7 @@ a {
     /* add style to make this background blur */
     filter: blur(20px);
     height: 2560px;
-    /* width: 2220px; */
+    width:1020px;
     /* Calculate width based on size of screen */
     width: calc(100% );
     /* min-width: 1200px; */
@@ -55,7 +55,7 @@ a {
     background-repeat: repeat !important;
     filter: blur(15px) !important;
     height: 1900px !important;
-    width: 1404px !important;
+    width: 750px !important;
     content: "" !important;
     inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2);
     position: absolute !important;
@@ -71,7 +71,7 @@ a {
     background-repeat: no-repeat;
     filter: blur(20px);
     height: 1590px;
-    width: 768px;
+    width: 600px;
     content: "";
     inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2);
     position: absolute;
