@@ -30,23 +30,19 @@ a {
 
 
 /* Write css code for desktop screen */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1439px) {
   .header:before {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1920" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>');
-    background-repeat: no-repeat;
-    /* add style to make this background blur */
-    filter: blur(20px);
-    height: 2560px;
-    width:1020px;
-    /* Calculate width based on size of screen */
-    width: calc(100% );
-    /* min-width: 1200px; */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1920" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>') !important;
+    background-repeat: no-repeat !important;
+    filter: blur(20px) !important;
+    height: 2560px !important;
+    width:1020px !important;
     content: "";
-    inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2);
-    position: absolute;
-    inset: auto auto 0 20%;
-    transform: perspective(900px) rotateX(40deg);
-    transform-origin: bottom center;
+    inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2)  !important;
+    position: absolute !important;
+    inset: auto auto 0 20% !important;
+    transform: perspective(900px) rotateX(40deg) !important;
+    transform-origin: bottom right  !important;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -54,18 +50,18 @@ a {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="1024" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>') !important;
     background-repeat: repeat !important;
     filter: blur(15px) !important;
-    height: 1900px !important;
-    width: 750px !important;
+    height: 1800px !important;
+    width: 512px !important;
     content: "" !important;
     inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2);
     position: absolute !important;
-    inset: auto auto 0% 50% !important;
-    transform: perspective(2000px) rotateX(45deg) !important;
+    inset: auto auto 0% 60% !important;
+    transform: perspective(1400px) rotateX(45deg) !important;
     transform-origin: bottom right !important;
   }
 }
 /* for Talet screen wrtie */
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 768px) {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="768" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>');
     background-repeat: no-repeat;
@@ -85,8 +81,8 @@ a {
   .header:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2160" width="768" height="2160"><defs><pattern id="p" width="240" height="240" patternUnits="userSpaceOnUse"><circle cx="80" cy="80" r="80" fill="%23d2e3fc" /></pattern></defs><rect fill="url(%23p)" width="1920" height="2160" /></svg>');
     background-repeat: no-repeat;
-    filter: blur(20px);
-    height: 1690px;
+    filter: blur(15px);
+    height: 1490px;
     width: 230px;
     content: "";
     inset: calc((100% - 2160px) / 2) calc((100% - 1920px) / 2);

@@ -9,7 +9,15 @@ class Navbar extends React.Component {
     this.state = {
       active: false,
       navBarActiveClass: "",
+      notification: true
     };
+  }
+  handleNotification() {
+    this.setState(
+      {
+        notification: false
+      }
+    )
   }
 
   toggleHamburger() {
@@ -33,12 +41,19 @@ class Navbar extends React.Component {
   }
 
   render() {
-    return (
+    return (<>
+      {
+        this.state.notification && <div className="has-background-black is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
+          <p className="has-text-light">Coming to Punjab with exciting news</p>
+          <button className="button is-primary px-3 mx-4" onClick={() => this.handleNotification()}>X</button>
+        </div>
+      }
       <nav
         className="navbar is-transparent is-fixed-top-mobile has-background-light"
         role="navigation"
         aria-label="main-navigation"
       >
+
         <div style={{ maxWidth: "96%" }} className="container"        >
           <div className="navbar-brand">
             <Link href="/" className="navbar-item">
@@ -47,12 +62,12 @@ class Navbar extends React.Component {
                 <Image
                   src={logo}
                   style={{
-                    maxHeight:"3.25rem"
+                    maxHeight: "3.25rem"
                   }}
                   alt="Khalis Foundation"
-                  // style={{ width: "100px", height: "40px" }}
-                  // width={100}
-                  // height={600}
+                // style={{ width: "100px", height: "40px" }}
+                // width={100}
+                // height={600}
                 />
                 {/* <p className="is-size4 px-0">Sikh Youth Coding Initiative
                 </p> */}
@@ -102,6 +117,7 @@ class Navbar extends React.Component {
         </div>
         <span />
       </nav>
+    </>
     );
   }
 };
