@@ -44,7 +44,7 @@ class Navbar extends React.Component {
     return (<>
       {
         this.state.notification && <div className="has-background-black is-flex is-flex-direction-row is-justify-content-center is-align-items-center">
-          <p className="has-text-light">Double your support by donating via Dasvandh Network. Click here for more information.</p>
+          <p className="has-text-light">Double your support by donating via Dasvandh Network. <a href="https://khalisfoundation.org/donate/">Click here for more information</a>.</p>
           <button className="button is-primary px-3 mx-4" onClick={() => this.handleNotification()}>X</button>
         </div>
       }
