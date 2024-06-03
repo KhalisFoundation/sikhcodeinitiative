@@ -1,4 +1,10 @@
 # example netlify.toml
+[[redirects]]
+    from = "/*"
+    to = "https://form.jotform.com/232005203095038"
+    status = 301
+    force = true
+    
 [build]
   command = "next build"
   functions = "netlify/functions"
